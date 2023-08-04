@@ -1,10 +1,9 @@
 <script>
-  var form    = document.getElementById('one-step-order-Fh9Z9zs_Ce');
-  var formBtn = form.querySelector('.form-btn');
-
-
-  let html = "<p class='privacy-policy-box' style='margin: 25px 0;'> <input type='checkbox' id='tc-check' required> <label for='tc-check'> I agree to the <a href='#' target='_blank'>Terms and Conditions</a></label></p>";
-
-  formBtn.insertAdjacentHTML("beforebegin", html);
-
+  // GHL updated their code so the checkbox button isn't working now, Instead of that
+  // I just added a piece of code that allow you to
+  // Add a text with a terms & conditions link.
+  let form = document.getElementById('one-step-order-YkMnfnps-o');
+  let formPayment = form.querySelector('.form-payment');
+  let html = "<p class='privacy-policy-box'>By submitting order, I agree to the <a href='#' target='_blank'>Privacy Policy</a>, <a href='#' target='_blank'>Terms and Conditions</a>, <a href='#' target='_blank'> Cancelation and Refund Policy</a>.</p>";
+  formPayment.insertAdjacentHTML("beforeend", html);
 </script>
